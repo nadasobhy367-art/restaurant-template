@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم لافييستا</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">لافييستا ☕</div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#menu">المنيو</a></li>
+            <li><a href="#about">عننا</a></li>
+            <li><a href="#gallery">جاليري</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>أهلاً بك في لافييستا</h1>
+            <p>تجربة طعام لا تُنسى في أجواء دافئة ومميزة</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">شوف المنيو</a>
+                <a href="#contact" class="btn-secondary">احجز طاولة</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2 class="section-title">منيونا المميز</h2>
+        <div class="menu-tabs">
+            <button class="tab active" data-tab="food">أكل</button>
+            <button class="tab" data-tab="drinks">مشروبات</button>
+            <button class="tab" data-tab="desserts">حلويات</button>
+        </div>
+        <div class="menu-grid" id="menu-items"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>قصتنا</h2>
+                <p>من 2010 وإحنا بنقدم أحلى تجربة طعام في المدينة، بنؤمن إن الأكل الكويس بيجمع الناس ويخلي اللحظات أحلى.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>+500</h3>
+                        <p>طبق يومياً</p>
+                    </div>
+                    <div class="stat">
+                        <h3>+10K</h3>
+                        <p>عميل سعيد</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15</h3>
+                        <p>سنة خبرة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2 class="section-title">جاليري</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item large">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="مطعم">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="أكل">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?w=400" alt="أكل">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" alt="كافيه">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400" alt="قهوة">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-lightbox"><i class="fas fa-times"></i></span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 شارع التحرير، القاهرة</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>01000000000+</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>يومياً من 9 صباحاً لـ 12 منتصف الليل</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="اسمك" required>
+                <input type="tel" placeholder="رقم تليفونك" required>
+                <input type="date" required>
+                <select>
+                    <option>عدد الأشخاص</option>
+                    <option>1-2</option>
+                    <option>3-4</option>
+                    <option>+5</option>
+                </select>
+                <button type="submit" class="btn-primary">احجز دلوقتي</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 لافييستا - جميع الحقوق محفوظة</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
